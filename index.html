@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Hunt</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         * {
@@ -58,13 +61,22 @@
             text-align: center;
             color: #fff;
         }
+        .zen-dots-regular {
+            font-family: "Zen Dots", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }   
         .header h1 {
             font-size: 3em;
             font-weight: 700;
+            font-family: "Zen Dots", sans-serif;
+            font-style: normal;
         }
         .header h2 {
             font-size: 1.5em;
             margin-top: 10px;
+            font-family: "Zen Dots", sans-serif;
+            font-style: normal;
         }
 
         /* Sections */
@@ -125,6 +137,14 @@
             background: #f44336;
             color: #fff;
         }
+        .GFG { 
+           background:#03DAC6;
+           border:none;
+           color:#121212;
+           padding: 10px 20px; 
+           border-radius: 5px; 
+           cursor: pointer
+        } 
 
         /* Footer */
         footer {
@@ -154,8 +174,8 @@
 
 <!-- About Section -->
 <section class="section about" id="about">
-    <img src="themelogo_resized.png" alt="phaseshiftjpg" width="250" height="300" class="center">
     <h1>About Digital Hunt</h1>
+    <img src="themelogo_resized.png" alt="phaseshiftjpg" width="250" height="300" class="center">
     <p>Digital Hunt 2024 is an adrenaline-fueled hacking challenge where participants compete to solve various puzzles and tasks. Whether you're a beginner or an experienced hacker, this event will test your skills and push your limits.</p>
 </section>
 
@@ -164,14 +184,14 @@
     <h1>Event Schedule</h1>
     <div class="schedule-details">
         <div class="schedule-item">
-            <h3>Start</h3>
-            <p>Digital Hunt - 9:00 AM</p>
-            <p>Workshop & Warm-up - 11:00 AM</p>
+            <h3>Day 1</h3>
+            <p>Round 1 - 1:00 PM</p>
+            <p>Results Announcement for next Round</p>
         </div>
         <div class="schedule-item">
-            <h3>End</h3>
-            <p>Submission Deadline - 8:00 PM</p>
-            <p>Awards Ceremony - 9:00 PM</p>
+            <h3>Day 2</h3>
+            <p>Round 2 - 1:00 PM</p>
+            <p>Results Announcement - 3:00 PM</p>
         </div>
     </div>
 </section>
@@ -179,11 +199,13 @@
 <!-- Contact Section -->
 <section class="section contact" id="contact">
     <h1>JOIN THE HUNT!</h1>
-    <p>Let us know you’re coming!</p>
-    <button onclick="document.getElementById('registrationModal').style.display='flex'" style="background: #03DAC6; color: #121212; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Register Now</button>
+    <form action="https://apple.com/">
+        <button type="submit" class="GFG">Click me</button>
+    </form>
+    <!-- <button onclick="document.getElementById('registrationModal').style.display='flex'" style="background: #03DAC6; color: #121212; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Register Now</button> -->
 </section>
 
-<!-- Registration Modal -->
+<!-- Registration Modal 
 <div class="modal" id="registrationModal">
     <div class="modal-content">
         <h2>Register for Digital Hunt</h2>
@@ -195,12 +217,13 @@
             <button type="button" class="close-btn" onclick="document.getElementById('registrationModal').style.display='none'">Close</button>
         </form>
     </div>
-</div>
+</div> -->
 
 <!-- Footer -->
 <footer>
     <p>© 2024 Digital Hunt. All Rights Reserved. Powered by Your Organization</p>
 </footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 <script>
     // Close the modal when clicking outside of it
